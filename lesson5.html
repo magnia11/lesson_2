@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+       /**
+        * Функция складывает числа a и b.
+        */
+       function sum (a, b) {
+           return a + b; 
+       }
+        
+        
+        /**
+        * Функция производит разность чисел a и b.
+        */
+        function diff (a, b) {
+           return a - b; 
+       }
+        
+        
+        /**
+        * Функция производит умножение чисел a и b.
+        */
+        function comp (a, b) {
+           return a * b; 
+       }
+        
+        
+        /**
+        * Функция производит деление a и b.
+        */
+        function div (a, b) {
+           return a / b; 
+       }
+        
+        /**
+        * С помощью функции получаем два числа и 
+        * производим с ними математические операции
+        */
+        function mathOperation (arg1, arg2, operation) {
+           switch (operation) {
+               case "+":
+                   return sum(arg1, arg2);
+               case "-":
+                   return diff (arg1, arg2);
+               case "*":
+                   return comp (arg1, arg2);
+               case "/":
+                   return div (arg1, arg2);
+           }
+        }
+        
+        console.log (mathOperation(4, 2, "+"));
+        console.log (mathOperation(4, 2, "-"));
+        console.log (mathOperation(4, 2, "*"));
+        console.log (mathOperation(4, 2, "/"));
+          
+    </script>
+</body>
+
+</html>
